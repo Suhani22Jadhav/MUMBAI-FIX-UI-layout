@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.appproject.HomeActivity"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/person_icon"
+            android:title="Account"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/contact_us_icon"
+            android:title="Contact Us"/>
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

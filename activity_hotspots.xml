@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Railways"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="410dp"
+        android:layout_height="500dp"
+        android:id="@+id/row1"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        android:padding="40dp">
+
+        <!-- Clothing Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/clothingCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/UploadPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="6dp"
+                    android:padding="20sp"
+                    android:text="Upload a picture"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/clothingImage"
+                    android:layout_width="79dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/baseline_photo_camera_back_24" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Electronics Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ChatBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="6dp"
+                    android:padding="20sp"
+                    android:text="Write a complain"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/elecImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/pencil_24" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/writeComplain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="49dp"
+                    android:padding="20sp"
+                    android:text="Write to\nAuthorities"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/GovImage"
+                    android:layout_width="84dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/mail_image_24" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="410dp"-->
+    <!--            android:layout_height="250dp"-->
+    <!--            android:id="@+id/row2"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="20dp">-->
+
+    <!--            &lt;!&ndash; Home Card &ndash;&gt;-->
+    <!--            -->
+
+    <!--            &lt;!&ndash; Beauty Card &ndash;&gt;-->
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_margin="10dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                app:cardElevation="20dp"-->
+    <!--                app:cardCornerRadius="20dp">-->
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent">-->
+    <!--                    <TextView-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:id="@+id/beautyName"-->
+    <!--                        android:text="Beauty"-->
+    <!--                        android:textSize="20sp"-->
+    <!--                        android:textColor="@color/lavender"-->
+    <!--                        android:layout_marginTop="10dp"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:layout_below="@+id/beautyImage"/>-->
+    <!--                    <ImageView-->
+    <!--                        android:layout_width="70dp"-->
+    <!--                        android:layout_height="70dp"-->
+    <!--                        android:id="@+id/beautyImage"-->
+    <!--                        android:layout_marginTop="15dp"-->
+    <!--                        android:layout_centerHorizontal="true"/>-->
+    <!--                </RelativeLayout>-->
+    <!--            </androidx.cardview.widget.CardView>-->
+    <!--        </LinearLayout>-->
+
+</LinearLayout>
